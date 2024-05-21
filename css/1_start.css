@@ -1,0 +1,375 @@
+/*carousel styles*/
+.carousel .ratio-wrap {
+  width: 100%;
+}
+
+.carousel .ratio-inner {
+  position: relative;
+  height: 0;
+  border: none;
+  padding-top: 65.3846%;
+}
+
+.ratio-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel a{
+  display: block;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide:nth-of-type(1) {
+  background-image: url(../img/carousel/carousel_1.jpg);
+  background-size: cover;
+}
+
+.slide:nth-of-type(2) {
+  background-image: url(../img/carousel/carousel_2.jpg);
+  background-size: cover;
+}
+.slide:nth-of-type(3) {
+  background-image: url(../img/carousel/carousel_3.jpg);
+  background-size: cover;
+}
+
+/*banners*/
+
+.banners.ratio-wrap {
+  width: 100%;
+}
+
+.banners .ratio-inner {
+  position: relative;
+  height: 0;
+  border: none;
+  padding-top: 29.5384%; /*384/1300*/
+}
+
+.banner-first,
+.banner-second {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+}
+
+.banner-first {
+  background-image: url(../img/banners/banner-first-bg.png);
+  background-size: cover;
+  border-right: 1px solid #e5e5e5;
+}
+
+.banner-second {
+  background-image: url(../img/banners/banner-second-bg.png);
+  background-size: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 16.9270%;
+}
+
+.banner-first .banner-text{
+  left: 65.1%;
+}
+
+.banner-second .banner-text{
+  left: 57.2%;
+}
+
+.banner-text a {
+  font-size: 1.75em;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+.banner-text p {
+  padding-top: 0.8em;
+  font-size: 1em;
+  font-family: "Times New Roman";
+  color: #757575;
+  font-style: italic;
+  text-align: center;
+}
+
+.banner-third {
+  display: none;
+}
+
+/*main*/
+
+.main {
+  padding: 136px 0 79px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.main h2 {
+  font-size: 3.125em;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.item-list{
+  margin: 95px 0 39px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 20.338%;
+  margin: 0 0 60px 0;
+}
+
+.item-photo {
+  position: relative;
+  margin: 0 0 40px;
+}
+
+.item-photo:hover a:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item-photo:hover a:after {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  content: 'View item';
+  text-align: center;
+  color: #f14a58;
+  font-size: 1.375em;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.item-photo:hover + .item-name {
+  color: #f14a58;
+}
+
+.item-name {
+  display: block;
+  width: 80%;
+  margin: 0 auto 18px;
+  font-size: 0.875em;
+  font-family: "Roboto";
+  text-align: center;
+  letter-spacing: 0.3px;
+  line-height: 1.52
+}
+
+.item-price {
+  font-size: 0.875em;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+
+@media screen and (max-width:1024px){
+
+  /*carousel*/
+  .carousel .ratio-inner {
+    padding-top: 106.77083%;    /*820/768*/
+  }
+
+  .slide:nth-of-type(1) {
+    background-image: url(../img/carousel/carousel-tablet-1.jpg);
+  }
+  
+  .slide:nth-of-type(2) {
+    background-image: url(../img/carousel/carousel-tablet-2.jpg);
+  }
+
+  .slide:nth-of-type(3) {
+    background-image: url(../img/carousel/carousel-tablet-3.jpg);
+  }
+
+  /*banners*/
+  .banners .ratio-inner {
+    padding-top: 32.6822%; /*261/1300*/
+  }
+
+  .banner-first {
+    background-image: url(../img/banners/banner-first-bg-tablet.png);
+    width: 66.6666%;
+  }
+
+  .banner-second {
+    display: none;
+  }
+
+  .banner-third {
+    position: relative;
+    width: 33.3333%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../img/banners/banner-third-bg.png);
+    background-size: cover;
+  }
+  
+  .banner-first .banner-text {
+    left: 65.11%;
+    top: 13%;
+  }
+  
+  .banner-third .banner-text {
+    position: absolute;
+    left: 40.41%;
+    top: auto;
+    bottom: 10.6577%;
+  }
+
+  .banner-text a {
+    font-size: 1.375em;
+  }
+
+  .banner-third .banner-text a {
+    color: #f14a58;
+  }
+
+  .banner-text p {
+    padding-top: 1em;
+    font-size: 1em;
+  }
+  
+  /*main*/
+  .main {
+    padding: 95px 0 137px;
+  }
+  
+  .main h2 {
+    font-size: 2.5em;
+  }
+  
+  .item-list {
+    margin: 79px 0 30px;
+  }
+  
+  .item-list .item:last-child {
+    display: none;
+  }
+  
+  .item {
+    width: 29.565%;
+    max-width: 240px;
+  }
+  
+  .item-photo {
+    margin-bottom: 35px;
+  }
+  
+}
+
+@media screen and (max-width:767px) {
+  
+  /*carousel*/
+  .carousel .ratio-inner {
+    padding-top: 141.333%;    /*530/375*/
+  }
+
+  .slide:nth-of-type(1) {
+    background-image: url(../img/carousel/carousel-mobile-1.jpg);
+  }
+  
+  .slide:nth-of-type(2) {
+    background-image: url(../img/carousel/carousel-mobile-2.jpg);
+  }
+
+  .slide:nth-of-type(3) {
+    background-image: url(../img/carousel/carousel-mobile-3.jpg);
+  }
+
+  /*banners*/
+  .banners .ratio-inner {
+    padding-top: 63.2%; /*237/375*/
+  }
+
+  .banner-first {
+    width: 100%;
+    background-image: url(../img/banners/banner-first-bg-mobile.png);
+  }
+  
+  .banner-third {
+    display: none;
+  }
+
+  .banner-first .banner-text {
+    top: 14.567%; 
+    left: 59%;
+  }
+
+  .banner-text p {
+    font-size: 0.875em;   /*14px*/
+  }
+  
+  /*main*/
+  .main {
+    padding: 58px 0 108px;
+  }
+  
+  .main h2 {
+    font-size: 1.625em;
+  }
+  
+  .item-list {
+    margin: 47px 0 10px;
+  }
+  
+  .item-list .item:nth-of-type(3) {
+    display: none;
+  }
+  
+  .item {
+    width: 46.9%;
+    max-width: 240px;
+    margin-bottom: 60px;
+  }
+  
+  .item-photo {
+    margin-bottom: 25px;
+  }
+  
+  .item-name {
+    font-size: 0.75em;
+    margin: 0 auto 13px;
+    letter-spacing: 0.3px;
+  }
+
+  .item-price {
+    font-size: 0.75em;
+  }
+}

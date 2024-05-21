@@ -1,0 +1,148 @@
+strong{
+  color: #f14a58;
+}
+
+.main {
+  box-sizing: border-box;
+  position: relative;
+  padding: 60px 0 155px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item:first-child {
+  height: 682px;
+}
+
+.item:nth-child(4n + 5) {
+  margin-right: 0px;
+}
+
+.banner {
+  position: absolute;
+  top: 27.9217%;
+  right: 0;
+  left: 0;
+}
+
+.banner b {
+  display: block;
+  margin: 0 0 22px 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  letter-spacing: 0.7px;
+}
+
+.banner p {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Times New Roman";
+}
+
+.button {
+  margin-top: 14px;
+  letter-spacing: 0.7px;
+}
+
+@media screen and (max-width:1024px){
+  
+  .main {
+    padding: 39px 0 136px;
+  }
+  
+  .item:first-child {
+    height: 687px;
+  }
+  
+  .item:nth-child(4n + 5) {
+    margin-right: 5.6521%;
+  }
+
+  .item:nth-child(3n + 4) {
+    margin-right: 0;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .banner {
+    top: 20.6217%;
+  }
+  
+  .banner b {
+    width: 66%;
+    margin: 0 auto 9px;
+    font-size: 1.25em;
+    letter-spacing: 0.6px;
+    line-height: 1.85;
+  }
+
+  .banner p {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+}
+
+@media screen and (max-width:767px) {
+
+  .main {
+    padding: 20px 0 100px;
+  }
+
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .item {
+    box-sizing: border-box;
+    margin-right: 0;
+    min-height: 365px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .item:first-child {
+    height: 365px;
+  }
+
+  .item:nth-child(4n + 5) {
+    margin-right: 0;
+  }
+
+  .item:nth-child(n+10){
+    display: none;
+  }
+
+  .banner {
+    box-sizing: border-box;
+    position: static;
+    margin: auto;
+    padding-bottom: 69px;
+  }
+
+  .banner b {
+    padding-top: 3px;
+    font-size: 1.125em;
+    line-height: 1.6;
+    letter-spacing: 0.6px;
+    width: 77%;
+  }
+  
+  .banner p {
+     padding-top: 7px;
+     font-size: 0.875em;
+     line-height: 1.9;
+     width: 80%;
+  }
+  
+  .button {
+    margin-top: 0px;
+  }
+}

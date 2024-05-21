@@ -1,0 +1,367 @@
+.footer a:hover {
+  color:#000;
+  text-decoration: underline;
+}
+
+.footer h3 {
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: bold;
+  letter-spacing: 0.0175em;
+  word-spacing: 0.1666em;   /*1px*/
+}
+
+.footer {
+  border-top: 1px solid #e5e5e5;
+  font-family: "Roboto";
+}
+
+.footer-links,
+.contact-and-aside{
+  width: 50%;       /*650/1300*/
+  height: 450px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 55px;
+}
+
+/*footer-links part*/
+.footer-links {
+  float: left;
+  padding-left: 4.6153%;  /*60/1300*/
+  border-right: 1px solid #e5e5e5;
+}
+
+.quick-links {
+  float: left;
+  width: 44.96%;      
+}
+
+.customer-care {
+  margin-left: 44.96%;
+}
+
+.quick-links h3,
+.customer-care h3 {
+  margin-bottom: 23px;
+}
+
+.links-list li {
+  margin: 26px 0px;
+  font-size: 0.875em;
+  letter-spacing: 0.0214em;
+}
+
+.links-list li a{
+  font-weight: normal;
+}
+
+/*contact-and-aside part*/
+.contact-and-aside {
+  margin-left: 50%;
+  padding-left: 4.6153%;  /*60/1300*/
+}
+
+.contact-info {
+  padding-bottom: 70px;
+}
+
+.phone-number,
+.questions {
+  width: 44.3%; 
+  display: inline-block;
+}
+
+.phone-number p {
+  font-size: 0.875em;
+  letter-spacing: 0.05em;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+}
+
+.questions img {
+  margin-right: 9px;
+}
+
+.questions a {
+  font-size: 0.875em;
+  font-weight: normal;
+  word-spacing: 0.192em;
+}
+
+.questions strong{
+  color: #000;
+  font-weight: bold;
+}
+
+.delivery-info{
+  font-size: 1em;
+  font-family: "Times New Roman";
+  color: #757575;
+  font-style: italic;
+  line-height: 1.88;
+}
+
+.social {
+  padding-top: 40px;
+}
+
+.social a img {
+  margin-right: 22px;
+}
+
+.social a:last-child img {
+  margin-right: 0;
+}
+
+.footer-bottom-links {
+  float: right;
+  padding: 33px 4.6153% 35px 0px;
+  width: 275px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-links li {
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 0.0333em;
+}
+
+.copyright {
+  float: left;
+  padding: 33px 0px 35px 4.6153%;
+}
+
+.copyright p{
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+}
+
+.sharing {
+  margin-top: 26px;
+  margin-left: 45.3846%;    /*590/1300*/
+}
+
+.sharing h3{
+  display: inline-block;
+  font-size: 1.125em;
+  letter-spacing: 0.05em;
+}
+
+.share-counter {
+  padding: 6px 6px 6px 10px;
+  display: inline-block;
+  background-image: url("../img/share-counter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0.75em;
+  font-family: "Roboto";
+}
+
+@media screen and (max-width:1024px) {
+
+  .footer-links,
+  .contact-and-aside{
+    height: 425px;
+    padding-top: 50px;
+  }
+
+  .footer-links {
+    width: 65.1041%;    /*500/768*/
+    padding-left: 5.2083%;  /*40/768*/
+    border-right: none;
+  }
+  
+  .quick-links{
+    width: 49.6%;
+  }
+  
+  .customer-care {
+    margin-left: 49.6%;
+  }
+  
+  .quick-links h3,
+  .customer-care h3 {
+    margin-bottom: 44px;
+  }
+
+  .contact-and-aside {
+    width: 34.8959%;    /*268/768*/
+    padding-right: 5.2083%; /*40/768*/
+    padding-left: 0;
+    margin-left: 65.1041%;
+  }
+
+  .phone-number,
+  .questions {
+    width: 100%;
+  }
+
+  .questions {
+    margin-bottom: 40px;
+  }
+
+  .phone-number {
+    margin-bottom: 22px;
+  }
+  
+  .social {
+    padding-top: 0px;
+  }
+  
+  .delivery-info {
+    display: none;
+  }
+
+  .copyright {
+    padding: 33px 0px 35px 5.2083%;
+  }
+
+  .footer-bottom-links {
+    padding: 33px 5.2083% 35px 0px;
+    width: 230px;
+  }
+  
+  .footer-bottom-links li {
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0.0333em;
+  }
+
+  .sharing {
+    margin-top: 26px;
+    margin-left: 43.2%;
+  }
+  
+  .sharing h3{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width:767px) {
+
+  .footer h3 {
+    font-size: 0.875em;
+  }
+
+  .footer-links {
+    float: none;
+    width: 100%;
+    height: 340px;
+    padding: 35px 5.3333% 0px;
+  }
+
+  .links-list li {
+    margin: 24px 0px;
+    font-size: 0.75em;
+  }
+
+  .quick-links {
+    width: 50%;   /*167/335*/
+  }
+
+  .customer-care {
+    width: 43.8805%;  /*147/335*/
+    margin-left: 56.1194%;
+  }
+
+  .quick-links h3,
+  .customer-care h3 {
+    margin-bottom: 37px;
+  }
+
+  .contact-and-aside{
+    height: auto;
+    width: 100%;
+    padding: 0 5.3333%;
+    margin: 0;
+  }
+
+  .contact-info {
+    padding: 0;
+  }
+  
+  .contact-info h3 {
+    margin-bottom: 12px;
+  }
+
+  .questions,
+  .phone-number {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 23px 0px 43px;
+  }
+
+  .questions {
+    border-right: 1px solid #e5e5e5;
+  }
+  
+  .questions a {
+    font-size: 0.75em;
+  }
+
+  .phone-number {
+    padding-left: 6.1%;
+  }
+  
+  .phone-number p {
+    font-size: 0.75em;
+  }
+
+  .footer aside {
+    position: relative;
+    height: 0px;
+  }
+
+  .social {
+    position: absolute;
+    top: 25px;
+    right: 0;
+  }
+
+  .footer-bottom-links {
+    width: 195px;
+    padding: 27px 0 27px 5.3333%;
+    float: none;
+  }
+
+  .footer-bottom-links li {
+    font-size: 0.625em;
+  }
+
+  .copyright {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 27px 0 30px 5.3333%;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .copyright p{
+    font-size: 0.625em;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+  }
+
+  .sharing {
+    padding: 20px 0px 0px;
+    position: absolute;
+    box-sizing: border-box;
+    right: 5.3333%;
+    margin: 0;
+  }
+
+  .sharing h3{
+    font-size: 0.875em;
+  }
+
+  .share-counter {
+    padding: 6px 5px 6px 9px;
+    font-size: 0.625em;
+  }
+}

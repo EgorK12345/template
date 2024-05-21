@@ -1,0 +1,70 @@
+.notifycation {
+  position: fixed;
+  padding: 5px;
+  background-color: #fff;
+  z-index: 6;
+}
+
+.top {
+  top: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.wrap {
+  max-width: 1300px;
+  min-width: 375px;
+  margin: auto;
+}
+
+.content-wrap{
+  width: 90.769230%;    /*1180px/1300px*/
+  max-width: 1180px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #f14a58;
+}
+
+img{
+  max-width: 100%;
+}
+
+i {
+  font-style: italic;
+}
+
+@media screen and (max-width:1024px){
+
+  .content-wrap {
+    width: 89.8437%;    /*690/768*/
+  }
+}
+
+@media screen and (max-width:767px) {
+
+  .content-wrap {
+    width: 89.3333%;    /*335/375*/
+  }
+}

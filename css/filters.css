@@ -1,0 +1,192 @@
+.filters {
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter {
+  position: relative;
+  width: 15.1538%;    /*197/1300*/
+  box-sizing: border-box;
+  padding-left: 1.5384%;  /*20/1300*/
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter:first-child,
+.filter:last-child {
+  width: 19.6923%;    /*256/1300*/
+}
+
+.filter:first-child {
+  padding-left: 4.6153%;
+}
+
+.filter:last-child {
+  padding-right: 2.953%;
+}
+
+.filter-creteria {
+  padding-top: 22px;
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.filter-dropbtn {
+  float: right;
+  display: block;
+  width: 45px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  background-image: url(../img/ico-dropbtn-filter.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.filter-options-list {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  right: 0;
+  top: 63px;
+  padding-bottom: 10px;
+  padding-left: 3.5384%;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  z-index: 1;
+}
+
+.filter:first-child .filter-options-list{
+  width: 84.953%;
+}
+
+.filter:last-child .filter-options-list{
+  width: 76.953%;
+  left:0;
+  right: auto;
+}
+
+.filter-options-list li {
+  padding: 10px 10px 0px;
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-options-list li:hover{
+  color: #f14a58;
+}
+
+.filter.selected .filter-creteria {
+  padding-top: 14px;
+  font-size: 0.75em;
+  font-family: "Roboto";
+  left: 10.1522%; /*20/1300*/
+  
+}
+
+.filter.selected {
+  background-color: #f7f7f7;
+}
+
+.filter.selected .filter-dropbtn{
+  background-color: #f7f7f7;
+}
+
+.selected-option {
+  padding-top: 7px;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans";
+  color: #f14a58;
+  font-weight: bold;
+}
+
+.filter:hover .filter-options-list{
+  display: block;
+}
+
+.filter-option-cancel{
+  display: none;
+}
+
+.filter.selected .filter-option-cancel{
+  display: block;
+}
+
+.filter-option.selected {
+  display: none;
+}
+
+@media screen and (max-width:1024px){
+  .filters {
+    display: none;
+  }
+
+  .filter {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 4px;
+    display: table;
+  }
+
+  .filter:first-child,
+  .filter:last-child {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .filter-creteria {
+    padding-left: 5.0781%;  /*38/786*/
+    font-size: 0.75em;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding-top: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  .filter-options-list{
+    padding: 17px 0 0 5.0781%;  /*38/786*/
+    display: table-row;
+    position: static;
+    display: block;
+    border: none;
+  }
+
+  .filter:first-child .filter-options-list,
+  .filter:last-child .filter-options-list {
+    width: 100%;
+    padding: 17px 0 0 5.0781%;  /*38/786*/
+  }
+
+  .filter-options-list li {
+    display: table-cell;
+    padding-left: 0px;
+    font-size: 1.75;
+    font-family: "Open Sans";
+    color: rgb(168, 168, 168);
+  }
+
+  .filter-options-list li:hover {
+    color: rgb(168, 168, 168);
+  }
+
+  .filter-options-list > li:not(:last-child)::after {
+    content: ",";
+  }
+
+  .filter-options-list::before {
+    
+  }
+
+  .filter-dropbtn,
+  .selected-option,
+  li.filter-option-cancel{
+    display: none;
+  }
+}
